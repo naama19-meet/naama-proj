@@ -29,8 +29,10 @@ def login_page():
             return render_template('home.html', error = error)
 
     else:
-
-        return render_template('home.html')
+        if session['username'] != None:
+            return redirect(url_for("profile_page", username=session['username']))
+        else:
+            return render_template('home.html')
 
 
 # Running the Flask app
@@ -55,10 +57,6 @@ def sign_up_page():
 
         databases.add_user(name , password, 0 , number)
         return redirect(url_for("login_page"))
-@app.route('/noor', methods=['GET' ,'POST'])
-def noor():
-    if request.method == 'GET':
-        return render_template("noor.html")
 
 @app.route('/categories/phones')
 def phones():
@@ -100,13 +98,12 @@ def makepost():
          category = request.form['category']
          title = request.form['title']
          contact = request.form['contact_info']
-         username = request.form['username']
+         username = session['username']
 
          databases.add_post(title,describe,category,username,contact)
          databases.update_points(amount = 10, name = username)
 
-         return redirect(url_for('thanku'))
-
+         return redirect(url_for("profile_page", username = session['username']))
 
 if __name__ == "__main__":
     app.run(debug=True)

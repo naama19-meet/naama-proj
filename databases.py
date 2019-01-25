@@ -50,7 +50,7 @@ def get_points(name):
 def update_points(amount, name):
 	session = session_factory()
 	usr = query_by_name(name)
-	#usr.points += amount
+	usr.points += amount
 	session.commit()
 
 def query_by_title(title):
