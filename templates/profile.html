@@ -1,0 +1,33 @@
+{% extends "navbar.html" %}
+    
+        {% block head %}
+        <title>{{user.name}}'s profile</title>
+        {% endblock %}
+        {% block body %}
+        <style>
+        body {
+            background-image: url({{ url_for('static', filename='back2.jpeg') }});
+        }
+        </style> 
+        <div class = "bg profilecss">
+        <h1 class="font-weight-bold whit">{{user.name}}</h1>
+
+		<p class="whit"> your points:{{user.points}}</p>
+
+
+		
+		<form action = "/categories">
+			<input class="btn btn-outline-dark" type = "submit" value = "categories">
+		</form>
+		<form action = "/lostorfound">
+			<input class="btn btn-outline-dark" type = "submit" value = "Lost//found">
+
+		</form>
+		</div>
+        {% endblock %}
+<!-- 
+<style>
+        body {
+            background-image: url({{ url_for('static', filename='back.jpg') }});
+        }
+        </style> -->

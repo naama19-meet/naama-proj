@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title></title>
+    <link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='style.css') }}">
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='bootstrap.css') }}">
+</head>
+<body class="bg">
+    <div class="singup1">
+            <form class="btn btn-link" action="/signup" placeholder="sign up!" method="post">
+            <h1 class="font-weight-bold whit">SIGN UP</h1>
+            <form action="/signup" placeholder="sign up!" method="post">
+            <input type="text" name="name" placeholder="enter full name">
+            <br>
+            <input type="text" name="phonenum" placeholder="enter your phone number">
+            <br>
+            <input type="password" name="password" placeholder="enter password">
+            <br>
+            <form action = "/signup">
+                <input class="btn btn-outline-dark"<  type="submit" value="submit">
+            </form>
+    </div>
+
+    <script src="{{ url_for('static', filename='jquery.js') }}"></script>
+    <script src="{{ url_for('static', filename='bootstrap.bundle.js') }}"></script> 
+
+</body>
+</html>

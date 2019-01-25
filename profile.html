@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>{{user.name}}'s profile</title>
+	</head>
+	<body>
+		<h1>{{user.name}}</h1>
+		<p>{{user.points}}</p>
+		<form action = "/categories">
+			<input type = "submit" value = "categories">
+		</form>
+		<form action = "/lostorfound">
+			<input type = "submit" value = "Lost//found">
+		</form>
+		<form action = "/chat/{{user.name}}>">
+			<input type = "submit" value = "Chat">
+		</form>
+
+	</body>
+</html>

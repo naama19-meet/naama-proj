@@ -1,0 +1,134 @@
+.logininfo { 
+    position: fixed;
+    left: 45%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    
+  
+}
+
+
+.singup1 { 
+    position: relative;
+    top: 200px;
+    left: 500px;
+    width: 150px;
+    height: 100%;
+    
+  
+}
+
+.makepost { 
+    position: relative;
+    top: 100px;
+    left: 500px;
+    width: 150px;
+    height: 100%;
+
+  }
+
+.phonepos { 
+    position: relative;
+    top: 200px;
+    left: 500px;
+    width: 150px;
+    height: 100%;
+    
+  
+}
+
+body{
+
+}
+.mov{
+	color:white;
+	/*position: fixed;
+	transform: translate(-50%, -50%);*/
+
+    position: relative;
+	top: 7px;
+    left: 25px;
+    font-size: 50px;
+
+}
+}
+
+   
+    
+}
+.LF {
+    position: fixed;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    border-radius: 10px;}
+
+.thanks{
+    position: fixed;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+}
+.home{
+    position: fixed;
+    left: 50%;
+    top: 57%;
+    transform: translate(-50%, -50%);}
+.submit{
+    position: fixed;
+    left: 45%;
+    top: 55%;
+    transform: translate(-50%, -50%);
+}
+
+.badge
+{
+    line-height: 3 !important;
+    font-size: 100% !important;
+    padding: 6px 100px !important;
+}
+body {
+    background-image: url("aa.jpg");
+    height: 100%;
+    background-repeat: no-repeat;
+    background-size: 100%;
+}
+.whit{
+	color:white;
+}
+.writingcolor{
+    color:#284B63;
+    position:relative;
+    left: 100px;
+}
+
+
+.profilecss{
+	position: relative;
+    top: 210px;
+    left: 520px;
+    width: 150px;
+    height: 100%;
+    font-size: 1.6rem;
+
+}
+.ok{
+    position: relative;
+    top: 200px;
+    left: 450px;
+    width: 150px;
+    height: 100%;
+}
+.color{
+    color: red;
+}
+.pppp{
+    background-color: rgb(153, 153, 255);
+}
+.badg
+{
+    line-height: 1.5 !important;
+    font-size: 100% !important;
+    padding: 6px 30px !important;
+    border-radius: 10px;    
+}

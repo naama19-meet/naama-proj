@@ -1,0 +1,40 @@
+{% extends "navbar.html" %}
+    
+        {% block head %}
+        {% endblock %}
+        {% block body %}
+            
+            <div class="bg">
+               <br>
+            <h1 class="font-weight-bold whit"> CATEGORIES:</h1>
+            <div>
+            <br>
+            <br>
+            <a href="{{ url_for('phones') }}" class="badg badge-light"> Phones </a>
+            <br>
+            <br>
+            <a href="{{ url_for('bags')}}" class="badg badge-light"> Bags</a>
+            <br>
+            <br>
+            <a href="{{url_for('other')}}" class="badg badge-light"> Other</a>
+            <br>
+            <br>
+            <a href="{{ url_for('wallets')}}" class="badg badge-light"> Wallets</a>
+            <br>
+            <br>
+            <a href="{{ url_for('sunglasses')}}" class="badg badge-light"> Sunglasses</a>
+            <br>
+            <br>
+            <a href="{{ url_for('books')}}" class="badg badge-light"> Books</a>
+            <br>
+            <br>
+            <a href="{{ url_for('keys')}}" class="badg badge-light"> Keys</a>
+            <br>
+            <br>
+            <a href="{{ url_for('clothes')}}" class="badg badge-light"> Clothes</a>
+            <br>
+            <br>
+            <a href="{{ url_for('jewellery')}}" class="badg badge-light"> Jewellery</a>
+            </div>
+        </div>
+        {% endblock %}

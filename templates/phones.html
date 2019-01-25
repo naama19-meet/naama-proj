@@ -1,0 +1,20 @@
+{% extends "navbar.html" %}
+
+        {% block head %}
+        {% endblock %}
+        {% block body %}
+            <div class="pppp">
+           
+                <h1 class="whit"> Phones</h1>
+            {% for i in phones%}
+              <h1 class="whit">{{i.title}}</h1>
+            
+                <p class="whit"> description: {{i.description}}</p>
+                
+                <p class="whit">poster: <a class="whit" href = "/profile/{{i.username}}">{{i.username}}</a></p> 
+          
+                <p class="whit">contact info: {{i.contact}}</p>
+            {% endfor %}
+            </div>
+        {% endblock %}
+        

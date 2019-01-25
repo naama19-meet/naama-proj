@@ -1,0 +1,13 @@
+<!doctype html>
+<html>
+	<body>
+		<h1>Search results for {{search}}</h1>
+		{% for i in list%}
+        	<h1 class = "whit">{{i.title}}</h1>
+            <p class="whit"> description: {{i.description}}</p>
+           	<p class="whit">poster: <a class="whit" href = "/profile/{{i.username}}">{{i.username}}</a></p> 
+            <p class="whit">contact info: {{i.contact}}</p>
+            <p class = "pppp"><br></p>
+		{% endfor %}
+	</body>
+</html>

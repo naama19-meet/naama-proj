@@ -1,0 +1,22 @@
+{% extends "navbar.html" %}
+    
+        {% block head %}
+        <title>My Final Project</title>
+        {% endblock %}
+        {% block body %}
+
+        
+        <div class="bg">
+            <form method = "get">    
+            <div class="submit">
+            <!--<button type="submit" href= "/categories" class="btn btn-primary btn-lg btn-block">Found</button>
+            <button type="submit" href= "/categories" class="btn btn-primary btn-lg btn-block">Lost </button> -->
+
+            <a class="badge badge-primary", href="{{url_for('categories') }}">
+                Lost</a>
+            <a class="badge badge-primary", href="{{url_for('makepost') }}">
+                Found</a>
+            </div>
+            </form>
+        </div>
+        {% endblock %}
