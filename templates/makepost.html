@@ -1,39 +1,27 @@
 {% extends "navbar.html" %}
     
         {% block head %}
-        <title>make a post</title>
+        <title>make a post </title>
         {% endblock %}
         {% block body %}
         <div class="bg">
 			<div class="makepost">
 			<h1 class="font-weight-bold whit">what did you  find?</h1>
 			<form method="post">
-			<input type="text" name="title" placeholder="title for your post ">
+				<div class="form-group">
+					<label for="title">Post Title: </label>
+					<input id="title" class="form-control" type="text" name="title" placeholder="title for your post ">
+				  </div>
 
-			<input type="text" name="describe" placeholder="describe the item that you found">
-			<br>
-			<input type="text" name="contact_info" placeholder="contact info">
-			<input type="text" name="username" placeholder="username">
-			<input type="radio" name="category" value="phones">phones
-			<br>
-			<input type="radio" name="category" value="wallets">wallets
-			<br>
-			<input type="radio" name="category" value="sunglases">sunglasses
-			<br>
-			<input type="radio" name="category" value="keys">keys
-			<br>
-			<input type="radio" name="category" value="bags">bags
-			<br>
-			<input type="radio" name="category" value="clothes">clothes
-			<br>
-			<input type="radio" name="category" value="jewelry">jewelry
-			<br>
-			<input type="radio" name="category" value="books">books
-			<br>
-			<input type="radio" name="category" value="others">others
-			<br>
-		<form action = "/makepost">
-        <button class="btn btn-outline-dark" type="submit" value="submit" >submit </button>
+				<input type="textarea" name="describe" placeholder="tell your story">
+				<br>
+				<input type="hidden" name="contact_info" value="66666666666">
+				<input type="text" name="username" placeholder="username">
+				<input checked type="hidden" name="category" value="phones">
+				<br>
+
+			<form action = "/makepost">
+        <button class="btn btn-outline-dark" type="submit" value="submit">submit </button>
 		</form>
 	</div>
 

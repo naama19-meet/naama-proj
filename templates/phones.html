@@ -3,17 +3,16 @@
         {% block head %}
         {% endblock %}
         {% block body %}
-            <div class="pppp">
+            <div class="">
            
                 <h1 class="whit"> Posts </h1>
+
             {% for i in phones%}
               <h1 class="whit">{{i.title}}</h1>
             
-                <p class="whit"> description: {{i.description}}</p>
+                <p class="whit"> story: {{i.description}}</p>
                 
-                <p class="whit">poster: <a class="whit" href = "/profile/{{i.username}}">{{i.username}}</a></p> 
-          
-                <p class="whit">contact info: {{i.contact}}</p>
+                <p class="whit">aouther: <a class="whit" href = "/profile/{{i.username}}">{{i.username}}</a></p>
             {% endfor %}
             </div>
         {% endblock %}
