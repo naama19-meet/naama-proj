@@ -38,6 +38,7 @@
 }
 
 body{
+    background-image: url(aaa.jpg) !important;
 
 }
 .mov{
@@ -97,7 +98,7 @@ body {
 	color:white;
 }
 .writingcolor{
-    color:#284B63;
+    color:#FFFFFF;
     position:relative;
     left: 100px;
 }
@@ -132,3 +133,6 @@ body {
     padding: 6px 30px !important;
     border-radius: 10px;    
 }
+.logininfo{
+        	z-index: 1000;
+        }

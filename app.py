@@ -29,9 +29,9 @@ def login_page():
             return render_template('home.html', error = error)
 
     else:
-        if session['username'] != None:
-            return redirect(url_for("profile_page", username=session['username']))
-        else:
+        # if session.get['username'] is not None:
+        #     return redirect(url_for("profile_page", username=session['username']))
+        # else:
             return render_template('home.html')
 
 
